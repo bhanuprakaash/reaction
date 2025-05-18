@@ -1,0 +1,60 @@
+.flow-node {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 150px;
+  text-align: center;
+  font-family: "Fira Code", monospace;
+  font-size: 0.9rem;
+}
+
+.flow-node.selected {
+  border: 2px solid #2196f3;
+  box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.3);
+}
+
+.flow-node-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.flow-node-type {
+  color: #2196f3;
+  font-weight: 500;
+}
+
+.flow-node-text {
+  color: #666;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+/* React Flow overrides */
+.react-flow__node {
+  cursor: pointer;
+}
+
+.react-flow__handle {
+  width: 8px;
+  height: 8px;
+  background: #2196f3;
+}
+
+.react-flow__edge-path {
+  stroke: #2196f3;
+  stroke-width: 2;
+}
+
+.react-flow__controls {
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.react-flow__controls button {
+  border-radius: 4px;
+  background: white;
+  border: 1px solid #e0e0e0;
+  color: #666;
+}
