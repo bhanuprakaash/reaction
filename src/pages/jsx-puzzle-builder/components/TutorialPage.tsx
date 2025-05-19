@@ -7,7 +7,7 @@ export default function TutorialPage() {
 );`;
 
   return (
-    <div className="max-w-3xl mx-auto p-6 bg-gray-800 rounded-lg shadow-md text-gray-100">
+    <div className="mx-auto p-6 bg-gray-800 rounded-lg shadow-md text-gray-100 overflow-scroll">
       <h2 className="text-2xl font-bold text-blue-400 mb-4">JSX & Rendering</h2>
 
       <div className="mb-6">

@@ -2,13 +2,16 @@ import type { ReactNode } from "react";
 import { useParams } from "react-router-dom";
 import JSXPuzzleBuilder from "../../jsx-puzzle-builder";
 import Tutorial from "../tutorial/Tutorial";
+import ComponentMatcher from "../../component-matcher";
 
 const levelComponents: Record<string, ReactNode> = {
   "1": <JSXPuzzleBuilder />,
+  "2": <ComponentMatcher />,
 };
 
 const tutorials: Record<string, ReactNode> = {
   "1": <Tutorial level="1" />,
+  "2": <Tutorial level="2" />,
 };
 
 const LevelPage = () => {
