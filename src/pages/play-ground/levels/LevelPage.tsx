@@ -4,17 +4,20 @@ import JSXPuzzleBuilder from "../../jsx-puzzle-builder";
 import Tutorial from "../tutorial/Tutorial";
 import ComponentMatcher from "../../component-matcher";
 import PropsMaze from "../../props-maze";
+import EventClicker from "../../event-clicker";
 
 const levelComponents: Record<string, ReactNode> = {
   "1": <JSXPuzzleBuilder />,
   "2": <ComponentMatcher />,
   "3": <PropsMaze />,
+  "4": <EventClicker />,
 };
 
 const tutorials: Record<string, ReactNode> = {
   "1": <Tutorial level="1" />,
   "2": <Tutorial level="2" />,
   "3": <Tutorial level="3" />,
+  "4": <Tutorial level="4"/>
 };
 
 const LevelPage = () => {
